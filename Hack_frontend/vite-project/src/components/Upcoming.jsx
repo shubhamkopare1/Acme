@@ -53,7 +53,7 @@ const Upcoming = () => {
     const navigate = useNavigate(); // ✅ Initialize navigation function
 
     return (
-        <div className="w-full flex flex-col items-center justify-center min-h-screen bg-transparent text-white p-9">
+        <div className="w-full flex flex-col items-center justify-center min-h-screen bg-transparent  p-9">
         <h1 className="text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-cyan-400 bg-clip-text text-[30px] sm:text-[60px] font-bold tracking-widest text-center uppercase animate-pulse">
             Upcoming Events
         </h1>
@@ -73,7 +73,7 @@ const Upcoming = () => {
                     <div className="p-4 pb-0">
                     <div className="flex items-center justify-between">
     <h2 className="text-xl font-bold text-white">{event.title}</h2>
-    <span className="text-yellow-400 font-bold text-lg">₹ {event.entryFee}</span>
+    <span className="text-yellow-400 font-bold text-lg">₹{event.entryFee}</span>
 </div>
                         <p className="text-gray-300 text-sm mt-2">{event.description}</p>
     
@@ -82,7 +82,7 @@ const Upcoming = () => {
                         {/* Date & Location */}
                         <div className="flex flex-col items-start gap-1 text-sm text-gray-400 mt-3">
     <span className="flex items-center gap-1 text-orange-400 font-semibold">
-        📅 {event.date}
+    📅 {event.date}
     </span>
     <span className="flex items-center gap-1">
         📍 {event.location}
