@@ -82,7 +82,7 @@ const Upcoming = () => {
                         {/* Date & Location */}
                         <div className="flex flex-col items-start gap-1 text-sm text-gray-400 mt-3">
     <span className="flex items-center gap-1 text-orange-400 font-semibold">
-    📅 {event.date}
+     {event.date}
     </span>
     <span className="flex items-center gap-1">
         📍 {event.location}

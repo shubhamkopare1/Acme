@@ -177,7 +177,7 @@ const EventInfo = () => {
 
 
           <p className="mt-2 text-lg">{event.subtitle}</p>
-          <p className="mt-2 font-semibold"><span className="  text-orange-400 font-semibold">📅 {event.date}</span></p>
+          <p className="mt-2 font-semibold"><span className="  text-orange-400 font-semibold"> {event.date}</span></p>
           <p className="mt-2 font-semibold">Location: <span className="text-white">{event.location}</span></p>
           <p className="mt-2 font-semibold">Group Entry Fees (max 3 to 4 Member) : <span className="text-yellow-400 font-bold text-lg">₹ {event.EntryFees}</span></p>
           <p className="mt-2 font-semibold">Solo Entry Fees : <span className="text-yellow-400 font-bold text-lg">₹ {event.IFees}</span></p>
