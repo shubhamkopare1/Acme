@@ -3,7 +3,7 @@ import { FaFacebook, FaYoutube, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[#101026] py-12 px-4 text-center">
+    <footer className="relative bg-transperent py-12 px-4 text-center">
       {/* Floating Robot */}
       <img
         src="/robot.png" // Update with your image path

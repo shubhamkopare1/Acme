@@ -10,6 +10,7 @@ const events = [
     location:"TGPCET,Nagpur",
     EntryFees: 120,
     IFees:50,
+    time:"10:00 AM - 4:00 PM",
     problemStatement:[
       "Departmental Portal Web Design",
       "T&P Portal Web Design ",
@@ -47,6 +48,7 @@ const events = [
     location:"TGPCET,Nagpur",
     EntryFees: 120,
     IFees:50,
+    time:"10:00 AM - 4:00 PM",
     about: [
       {
         heading: "About the Event",
@@ -77,6 +79,7 @@ const events = [
     location:"TGPCET,Nagpur",
     EntryFees: 120,
     IFees:50,
+    time:"10:00 AM - 4:00 PM",
     about: [
       {
         heading: "About the Event",
@@ -107,6 +110,7 @@ const events = [
     location:"TGPCET,Nagpur",
     EntryFees: 120,
     IFees:50,
+    time:"10:00 AM - 4:00 PM",
     about: [
       {
         heading: "About the Event",
@@ -138,6 +142,7 @@ const events = [
     location:"TGPCET,Nagpur",
     EntryFees: "Free",
     IFees:"Free",
+    time:"10:00 AM - 4:00 PM",
     about: [
       {
         heading: "About the Event",
@@ -170,7 +175,7 @@ const EventInfo = () => {
     <div className="text-white min-h-screen px-4 py-10 flex flex-col items-center">
       <div className="mb-16 w-full max-w-4xl flex flex-col items-center">
         <div className="text-center">
-        <h1 className=" font-bold tracking-[5px] uppercase bg-gradient-to-r from-teal-400 via-blue-500 to-teal-400 bg-clip-text text-transparent 
+        <h1 className=" font-bold tracking-[5px] uppercase font-bold uppercase tracking-widest text-center bg-gradient-to-r from-cyan-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent
   text-[2rem] sm:text-[2.2rem] md:text-[3rem] lg:text-[3.5rem]">
   {event.title}
 </h1>
@@ -178,8 +183,9 @@ const EventInfo = () => {
 
           <p className="mt-2 text-lg">{event.subtitle}</p>
           <p className="mt-2 font-semibold"><span className="  text-orange-400 font-semibold"> {event.date}</span></p>
+          <p className="mt-2 font-semibold">Timing : <span className="  text-orange-400 font-semibold"> {event.date}</span></p>
           <p className="mt-2 font-semibold">Location: <span className="text-white">{event.location}</span></p>
-          <p className="mt-2 font-semibold">Group Entry Fees (max 3 to 4 Member) : <span className="text-yellow-400 font-bold text-lg">₹ {event.EntryFees}</span></p>
+          <p className="mt-2 font-semibold">Group Entry Fees (MAX 3 - 4 Member) : <span className="text-yellow-400 font-bold text-lg">₹ {event.EntryFees}</span></p>
           <p className="mt-2 font-semibold">Solo Entry Fees : <span className="text-yellow-400 font-bold text-lg">₹ {event.IFees}</span></p>
         </div>
         <div className="flex justify-center">

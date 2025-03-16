@@ -38,7 +38,7 @@ const Countdown = () => {
     TECH-AXION 2K25
   </h3>
   <h5
-    className="text-[1rem] sm:text-[1rem] md:text-[1.2rem] lg:text-[1.3rem] font-semibold leading-[2] mx-auto my-[25px] bg-gradient-to-r from-green-400 via-lime-500 to-green-400 bg-clip-text text-transparent"
+    className="text-[1rem] sm:text-[1rem] md:text-[1.2rem] lg:text-[1.3rem] font-semibold leading-[2] mx-auto my-[25px] text-gray-400"
     style={{ margin: 0 }}
   >
     Organized by Information Technology Department, TGPCET
@@ -47,24 +47,30 @@ const Countdown = () => {
 <br />
      
 <br />
-<div style={{ display: "flex" ,gap : "1rem" , } } className=" flex flex-wrap justify-center">
+<h1 className="text-[1.5rem] sm:text-[1.5rem] md:text-[2rem] lg:text-[2.2rem]  font-bold uppercase mb-6 bg-gradient-to-r from-blue-500 via-blue-600 to-cyan-400 bg-clip-text text-transparent mg-0">
+Countdown
+</h1>
+<div className="flex flex-wrap justify-center gap-6 mt-5">
 
-
-{/* Countdown Timer */}
-<h2 className="text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-cyan-400 bg-clip-text border-[3px] border-blue-400/50 rounded-xl shadow-[4px_4px_20px_#0088ff80] font-bold text-[clamp(1.2rem,3vw,1.8rem)] max-w-[150px] w-[clamp(100px,12vw,150px)] p-4 text-center relative">
-  {timeLeft.days} <br />days
-</h2>
-<h2 className="text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-cyan-400 bg-clip-text border-[3px] border-blue-400/50 rounded-xl shadow-[4px_4px_20px_#0088ff80] font-bold text-[clamp(1.2rem,3vw,1.8rem)] max-w-[150px] w-[clamp(100px,12vw,150px)] p-4 text-center relative">
-   {timeLeft.hours} <br /> hours 
-</h2>
-<h2 className="text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-cyan-400 bg-clip-text border-[3px] border-blue-400/50 rounded-xl shadow-[4px_4px_20px_#0088ff80] font-bold text-[clamp(1.2rem,3vw,1.8rem)] max-w-[150px] w-[clamp(100px,12vw,150px)] p-4 text-center relative">
-  {timeLeft.minutes} <br /> minutes 
-</h2>
-<h2 className="text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-cyan-400 bg-clip-text border-[3px] border-blue-400/50 rounded-xl shadow-[4px_4px_20px_#0088ff80] font-bold text-[clamp(1.2rem,3vw,1.8rem)] max-w-[150px] w-[clamp(100px,12vw,150px)] p-4 text-center relative">
-   {timeLeft.seconds} <br /> seconds
-</h2>
-
-</div>
+        {Object.entries(timeLeft).map(([unit, value]) => (
+          <div
+            key={unit}
+            className="relative flex flex-col items-center transform transition duration-500 hover:scale-105"
+          >
+            {/* Outer Glass Effect */}
+            <div className="relative w-28 h-28 sm:w-32 sm:h-32 flex items-center justify-center rounded-xl bg-[#101026] shadow-lg border border-blue-500/50 backdrop-blur-xl overflow-hidden">
+              {/* Flip Animation for Countdown */}
+              <div className="text-5xl sm:text-6xl font-bold text-white relative z-10 animate-flip">
+                {value}
+              </div>
+            </div>
+            {/* Unit Labels */}
+            <span className="text-lg sm:text-xl uppercase mt-3 text-gray-300 tracking-widest">
+              {unit}
+            </span>
+          </div>
+        ))}
+      </div>
       </div>
     </div>
   );
