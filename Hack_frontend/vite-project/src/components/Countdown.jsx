@@ -50,7 +50,7 @@ const Countdown = () => {
 <h1 className="text-[1.5rem] sm:text-[1.5rem] md:text-[2rem] lg:text-[2.2rem]  font-bold uppercase mb-6 bg-gradient-to-r from-blue-500 via-blue-600 to-cyan-400 bg-clip-text text-transparent mg-0">
 Countdown
 </h1>
-<div className="flex flex-wrap justify-center gap-6 mt-5">
+<div className="flex flex-wrap justify-center gap-6 mt-5 p-8 pt-0 pb-0">
 
         {Object.entries(timeLeft).map(([unit, value]) => (
           <div
@@ -58,9 +58,9 @@ Countdown
             className="relative flex flex-col items-center transform transition duration-500 hover:scale-105"
           >
             {/* Outer Glass Effect */}
-            <div className="relative w-28 h-28 sm:w-32 sm:h-32 flex items-center justify-center rounded-xl bg-[#101026] shadow-lg border border-blue-500/50 backdrop-blur-xl overflow-hidden">
+            <div className="relative w-28 h-28 sm:w-28 sm:h-28 flex items-center justify-center rounded-xl bg-[#101026] shadow-lg border border-blue-500/50 backdrop-blur-xl overflow-hidden">
               {/* Flip Animation for Countdown */}
-              <div className="text-5xl sm:text-6xl font-bold text-white relative z-10 animate-flip">
+              <div className="text-4xl sm:text-4xl font-bold text-white relative z-10 animate-flip">
                 {value}
               </div>
             </div>

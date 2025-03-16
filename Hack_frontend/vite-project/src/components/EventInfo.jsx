@@ -183,7 +183,7 @@ const EventInfo = () => {
 
           <p className="mt-2 text-lg">{event.subtitle}</p>
           <p className="mt-2 font-semibold"><span className="  text-orange-400 font-semibold"> {event.date}</span></p>
-          <p className="mt-2 font-semibold">Timing : <span className="  text-orange-400 font-semibold"> {event.date}</span></p>
+          <p className="mt-2 font-semibold">Timing : <span className="  text-orange-400 font-semibold"> {event.time}</span></p>
           <p className="mt-2 font-semibold">Location: <span className="text-white">{event.location}</span></p>
           <p className="mt-2 font-semibold">Group Entry Fees (MAX 3 - 4 Member) : <span className="text-yellow-400 font-bold text-lg">₹ {event.EntryFees}</span></p>
           <p className="mt-2 font-semibold">Solo Entry Fees : <span className="text-yellow-400 font-bold text-lg">₹ {event.IFees}</span></p>
@@ -193,7 +193,7 @@ const EventInfo = () => {
   className="mt-6 bg-gradient-to-r from-cyan-400 to-blue-600 px-6 py-3 text-white font-semibold rounded-lg shadow-lg hover:scale-105 transition-transform"
   onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSeaZU2cy_ZZGOkNJQv8SYu-MY6x4XKCcnl7N6iMvQFPY8ZyrQ/viewform", "_blank")}
 >
-  Apply Now
+  Register Now
 </button>
         </div>
         <div className="max-w-3xl text-center mt-8">

@@ -63,7 +63,7 @@ const Upcoming = () => {
   const navigate = useNavigate(); // ✅ Initialize navigation function
 
   return (
-    <div className="w-full flex flex-col items-center justify-center min-h-screen bg-transparent  p-9">
+    <div className="w-full flex flex-col items-center justify-center min-h-screen bg-transparent  p-8">
       <h1 className="text-[1.5rem] sm:text-[1.5rem] md:text-[2rem] lg:text-[2.2rem] font-bold uppercase mb-6 bg-gradient-to-r from-blue-500 via-blue-600 to-cyan-400 bg-clip-text text-transparent">
         Upcoming Events
       </h1>

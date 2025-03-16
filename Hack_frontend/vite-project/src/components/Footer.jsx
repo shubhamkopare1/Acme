@@ -13,7 +13,7 @@ const Footer = () => {
 
       {/* Footer Content */}
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-2xl font-bold text-cyan-400">TECH-AXION 2k25</h2>
+        {/* <h2 className="text-2xl font-bold text-cyan-400">TECH-AXION 2k25</h2> */}
         <p className="text-gray-400 mt-2">
           Information Technology Department
           <br/>
