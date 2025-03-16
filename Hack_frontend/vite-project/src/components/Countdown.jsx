@@ -29,7 +29,7 @@ const Countdown = () => {
     <div className="w-full text-white bg-transparent min-h-auto">
    
       {/* Added margin-top to position it below the navbar */}
-      <div className="mt-10 flex flex-col items-center text-center">
+      <div className="mt-5 p-6 flex flex-col items-center text-center">
       <h1 className="text-[2rem] sm:text-[2rem] md:text-[3rem] lg:text-[4rem] font-bold tracking-[5px] uppercase bg-gradient-to-r from-teal-400 via-blue-500 to-teal-400 bg-clip-text text-transparent">
     National Level Event
   </h1>
@@ -45,9 +45,7 @@ const Countdown = () => {
   </h5>
 <br />
 <br />
-     
-<br />
-<h1 className="text-[1.5rem] sm:text-[1.5rem] md:text-[2rem] lg:text-[2.2rem]  font-bold uppercase mb-6 bg-gradient-to-r from-blue-500 via-blue-600 to-cyan-400 bg-clip-text text-transparent mg-0">
+<h1 className="text-[1.5rem] sm:text-[1.5rem] md:text-[2rem] lg:text-[2.2rem]  font-bold uppercase mb-4 bg-gradient-to-r from-blue-500 via-blue-600 to-cyan-400 bg-clip-text text-transparent mg-0">
 Countdown
 </h1>
 <div className="flex flex-wrap justify-center gap-6 mt-5 p-8 pt-0 pb-0">

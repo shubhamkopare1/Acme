@@ -8,7 +8,7 @@ const Home = () => {
    <div> 
    <Countdown/>
    <br />
-   <br />
+
    <Upcoming/>
    </div>
   </>
