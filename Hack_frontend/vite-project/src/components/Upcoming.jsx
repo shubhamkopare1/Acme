@@ -64,7 +64,7 @@ const Upcoming = () => {
 
   return (
     <div className="w-full flex flex-col items-center justify-center min-h-screen bg-transparent  p-8">
-      <h1 className="text-[1.5rem] sm:text-[1.5rem] md:text-[2rem] lg:text-[2.2rem] font-bold uppercase mb-6 bg-gradient-to-r from-blue-500 via-blue-600 to-cyan-400 bg-clip-text text-transparent">
+      <h1 className="text-[2rem] sm:text-[2rem] md:text-[2rem] lg:text-[2.2rem] font-bold uppercase mb-6 bg-gradient-to-r from-blue-500 via-blue-600 to-cyan-400 bg-clip-text text-transparent">
         Upcoming Events
       </h1>
 
@@ -83,7 +83,7 @@ const Upcoming = () => {
             />
 
             {/* Event Details */}
-            <div className="p-4 pb-0">
+            <div className="pb-0">
               <div className="flex items-center justify-between">
                 <h2 className="text-xl font-bold text-white">{event.title}</h2>
                 <span className="text-yellow-400 font-bold text-lg">
@@ -96,27 +96,22 @@ const Upcoming = () => {
               {/* Date & Location */}
               <div className="flex flex-col items-start gap-1 text-sm text-gray-400 mt-3">
                 <span className="flex items-center gap-1 text-orange-400 font-semibold">
-                  🗓️ {event.date}
+                  🗓️ Date : {event.date}
                 </span>
-                <span className="flex items-center gap-1 text-orange-400 font-semibold">
-                    {event.time}
+                <span className="flex items-center gap-1 text-cyan-400  font-semibold">
+                ⏳ Time : {event.time}
                 </span>
-                <span className="flex items-center gap-1">
-                  📍 {event.location}
+                <span className="flex items-center  gap-1">
+                  📍Location : {event.location}
                 </span>
               </div>
+              <div class="mt-5 flex gap-4"><button class="w-1/2 bg-cyan-600 text-white text-sm px-4 py-2 rounded-md hover:bg-cyan-700 transition hover:pointer" onClick={() => navigate(`/event/${event.id}`)}>View Details</button><button class="w-1/2 bg-green-600 text-white text-sm px-4 py-2 rounded-md hover:bg-green-700 transition" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSeaZU2cy_ZZGOkNJQv8SYu-MY6x4XKCcnl7N6iMvQFPY8ZyrQ/viewform", "_blank")}>Register</button></div>
 
-              {/* Button */}
-              <button
-                className="mt-4 border border-green-300 text-green-400 px-6 py-2 rounded-md w-full font-semibold tracking-wide transition duration-300 hover:bg-green-400 hover:text-white"
-                onClick={() => navigate(`/event/${event.id}`)}
-              >
-                View Details
-              </button>
             </div>
           </div>
         ))}
       </div>
+
     </div>
   );
 };

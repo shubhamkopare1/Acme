@@ -30,22 +30,22 @@ const Countdown = () => {
    
       {/* Added margin-top to position it below the navbar */}
       <div className=" p-6 flex flex-col items-center text-center">
-      <h1 className="text-[2rem] sm:text-[2rem] md:text-[3rem] lg:text-[4rem] font-bold tracking-[5px] uppercase bg-gradient-to-r from-teal-400 via-blue-500 to-teal-400 bg-clip-text text-transparent">
+      <h1 className="text-[2rem] sm:text-[2rem] md:text-[3rem] lg:text-[4rem] font-bold tracking-[5px]  uppercase bg-gradient-to-r from-purple-500 via-blue-500 to-teal-400 bg-clip-text text-transparent">
     National Level Event
   </h1>
   {/* Heading */}
-  <h3 className="text-[1.5rem] sm:text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-bold tracking-[5px] uppercase bg-gradient-to-r from-teal-400 via-blue-500 to-teal-400 bg-clip-text text-transparent">
+  <h3 className="text-[1.8rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] font-bold tracking-wide uppercase bg-gradient-to-r from-pink-500 via-yellow-400 to-blue-500 bg-clip-text text-transparent mt ">
     TECH-AXION 2K25
   </h3>
   <h5
-    className="text-[1rem] sm:text-[1rem] md:text-[1.2rem] lg:text-[1.3rem] font-semibold leading-[2] mx-auto my-[25px] text-gray-400"
+    className="text-[1rem] sm:text-[1rem] md:text-[1.2rem] lg:text-[1.3rem] font-semibold leading-[2] mx-auto my-[25px] text-cyan-400"
     style={{ margin: 0 }}
   >
     Organized by Information Technology Department, TGPCET
   </h5>
 <br />
 <br />
-<h1 className="text-[1.5rem] sm:text-[1.5rem] md:text-[2rem] lg:text-[2.2rem]  font-bold uppercase mb-4 bg-gradient-to-r from-blue-500 via-blue-600 to-cyan-400 bg-clip-text text-transparent mg-0">
+<h1 className="text-[2rem] sm:text-[1.9rem] md:text-[2rem] lg:text-[2.2rem]  font-bold uppercase mb-4 bg-gradient-to-r from-blue-500 via-blue-600 to-cyan-400 bg-clip-text text-transparent mg-0 animate-pulse">
 Countdown
 </h1>
 <div className="flex flex-wrap justify-center gap-6  p-8 pt-0 pb-0">
