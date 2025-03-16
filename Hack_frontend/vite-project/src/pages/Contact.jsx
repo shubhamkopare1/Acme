@@ -3,7 +3,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="text-white py-10 relative">
+    <div className="text-white py-4 relative">
       <div className="max-w-4xl mx-auto px-6 text-center">
       <h2 className="text-[2rem] sm:text-[2rem] md:text-[3rem] lg:text-[3rem] font-bold uppercase tracking-widest text-center animate-pulse bg-gradient-to-r from-cyan-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent">
   📞 Get in Touch

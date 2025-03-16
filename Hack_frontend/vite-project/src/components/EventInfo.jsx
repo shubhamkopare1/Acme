@@ -172,7 +172,7 @@ const EventInfo = () => {
   }
 
   return (
-    <div className="text-white min-h-screen px-4 py-10 flex flex-col items-center">
+    <div className="text-white min-h-screen px-4 py-4 flex flex-col items-center">
       <div className="mb-16 w-full max-w-4xl flex flex-col items-center">
         <div className="text-center">
         <h1 className=" font-bold tracking-[5px] uppercase font-bold uppercase tracking-widest text-center bg-gradient-to-r from-cyan-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent

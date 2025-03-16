@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="text-white py-16 px-6 relative">
+    <div className="text-white py-5 px-6 relative">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-cyan-400 uppercase mb-6 bg-gradient-to-r from-cyan-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent">
           About College and Event

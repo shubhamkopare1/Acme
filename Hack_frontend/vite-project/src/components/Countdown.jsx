@@ -29,7 +29,7 @@ const Countdown = () => {
     <div className="w-full text-white bg-transparent min-h-auto">
    
       {/* Added margin-top to position it below the navbar */}
-      <div className="mt-20 flex flex-col items-center text-center">
+      <div className="mt-10 flex flex-col items-center text-center">
       <h1 className="text-[2rem] sm:text-[2rem] md:text-[3rem] lg:text-[4rem] font-bold tracking-[5px] uppercase bg-gradient-to-r from-teal-400 via-blue-500 to-teal-400 bg-clip-text text-transparent">
     National Level Event
   </h1>
