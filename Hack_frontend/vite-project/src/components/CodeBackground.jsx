@@ -49,7 +49,7 @@ const CodeBackground = () => {
       },
       particles: {
         color: {
-          value: "#A020F0",
+          value: "#FFFFFF",
         },
         links: {
           color: "#FFFFFF",
