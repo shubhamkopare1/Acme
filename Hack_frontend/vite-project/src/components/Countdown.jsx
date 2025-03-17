@@ -37,12 +37,11 @@ const Countdown = () => {
   <h3 className="text-[1.8rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] font-bold tracking-wide uppercase bg-gradient-to-r from-pink-500 via-yellow-400 to-blue-500 bg-clip-text text-transparent mt ">
     TECH-AXION 2K25
   </h3>
-  <h5
-    className="text-[1rem] sm:text-[1rem] md:text-[1.2rem] lg:text-[1.3rem] font-semibold leading-[2] mx-auto my-[25px] text-cyan-400"
-    style={{ margin: 0 }}
-  >
-    Organized by Information Technology Department, TGPCET
-  </h5>
+  <h5 className="text-lg sm:text-sm md:text-2xl lg:text-2xl  text-cyan-400 text-center mt-3 max-w-4xl leading-relaxed">
+        Organized by Department of Information Technology of Tulsiramji Gaikwad Patil College of Engineering and Technology, Nagpur (An Autonomous Institute)
+      </h5>
+ 
+ 
 <br />
 <br />
 <h1 className="text-[2rem] sm:text-[1.9rem] md:text-[2rem] lg:text-[2.2rem]  font-bold uppercase mb-4 bg-gradient-to-r from-blue-500 via-blue-600 to-cyan-400 bg-clip-text text-transparent mg-0 animate-pulse">

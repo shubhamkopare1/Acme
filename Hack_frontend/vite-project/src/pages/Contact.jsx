@@ -30,10 +30,16 @@ const Contact = () => {
         
          
           <p>
-            <strong>Event Head 1:</strong> +91 7498258715
+            <strong> Aniket Narnaware : </strong> +91 7498258715
           </p>
           <p>
-            <strong>Event Head 2:</strong> +91 8390301468
+            <strong>Arya Deshmukh : </strong> +91 9890205953
+
+          </p>
+          <p>
+            <strong> Pratik Sable : </strong> +91 8669831622
+
+
           </p>
           <p>
             <strong>Location:</strong> TGPCET , Information Technology Department

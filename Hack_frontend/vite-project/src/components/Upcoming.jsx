@@ -18,7 +18,7 @@ const events = [
     title: "INNOWARS",
     description:
       "Present your innovative tech projects and showcase your problem-solving skills",
-    img: "project.jpg",
+    img: "Innowars2.jpg",
     entryFee: 120,
     date: "5 April 2025",
     time:"10:00 AM - 4:00 PM",
@@ -29,7 +29,7 @@ const events = [
     title: "CREATIVE CANVA",
     description:
       "Design creative and impactful posters that visually communicate powerful ideas.",
-    img: "Debate.jpg",
+    img: "canva2.jpg",
     entryFee: 120,
     date: "5 April 2025",
     time:"10:00 AM - 4:00 PM",
@@ -40,7 +40,7 @@ const events = [
     title: "E-Gaming",
     description:
       "Compete in top-tier gaming battles featuring Valorant, BGMI, and Free Fire. Show your skills and dominate the battlefield!",
-    img: "Projects.jpg",
+    img: "gaming.jpg",
     entryFee: 120,
     date: "5 April 2025",
     time:"10:00 AM - 4:00 PM",
