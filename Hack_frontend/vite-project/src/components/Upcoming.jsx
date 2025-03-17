@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const events = [
   {
     id: 1,
-    title: "Web Craft(UI/UX) Design",
+    title: "WEB CRAFT (UI/UX)",
     description:
       "Showcase your creativity and design intuitive user experiences in this ultimate UI/UX competition.",
     img: "esport.jpg",
@@ -15,7 +15,7 @@ const events = [
   },
   {
     id: 2,
-    title: "Project Competition",
+    title: "INNOWARS",
     description:
       "Present your innovative tech projects and showcase your problem-solving skills",
     img: "project.jpg",
@@ -26,7 +26,7 @@ const events = [
   },
   {
     id: 3,
-    title: "Poster Competition",
+    title: "CREATIVE CANVA",
     description:
       "Design creative and impactful posters that visually communicate powerful ideas.",
     img: "Debate.jpg",
@@ -48,7 +48,7 @@ const events = [
   },
   {
     id: 5,
-    title: "Startup Pitch Fest",
+    title: "IDEATHON",
     description:
       "Showcase your startup ideas to investors and industry leaders.",
     img: "Projects.jpg",

@@ -179,8 +179,7 @@ const EventInfo = () => {
   text-[2rem] sm:text-[2.2rem] md:text-[3rem] lg:text-[3.5rem]">
   {event.title}
 </h1>
-
-
+   <img src="/egaming.PNG" alt="" />
           <p className="mt-2 text-lg">{event.subtitle}</p>
           <p className="mt-2 font-semibold"> 🗓️ Date : <span className="  text-orange-400 font-semibold"> {event.date}</span></p>
           <p className="mt-2 font-semibold">⏳Timing : <span className="  text-green-400 font-semibold"> {event.time}</span></p>
