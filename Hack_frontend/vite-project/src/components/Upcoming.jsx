@@ -105,7 +105,7 @@ const Upcoming = () => {
                   📍Location : {event.location}
                 </span>
               </div>
-              <div class="mt-5 flex gap-4"><button class="w-1/2 bg-cyan-600 text-white text-sm px-4 py-2 rounded-md hover:bg-cyan-700 transition hover:pointer" onClick={() => navigate(`/event/${event.id}`)}>View Details</button><button class="w-1/2 bg-green-600 text-white text-sm px-4 py-2 rounded-md hover:bg-green-700 transition" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSeaZU2cy_ZZGOkNJQv8SYu-MY6x4XKCcnl7N6iMvQFPY8ZyrQ/viewform", "_blank")}>Register</button></div>
+              <div class="mt-5 flex gap-4"><button class="w-1/2 bg-purple-600 text-white text-sm px-4 py-2 rounded-md hover:bg-purple-700 transition hover:pointer" onClick={() => navigate(`/event/${event.id}`)}>View Details</button><button class="w-1/2 bg-green-600 text-white text-sm px-4 py-2 rounded-md hover:bg-green-700 transition" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSeaZU2cy_ZZGOkNJQv8SYu-MY6x4XKCcnl7N6iMvQFPY8ZyrQ/viewform", "_blank")}>Register</button></div>
 
             </div>
           </div>
