@@ -190,7 +190,7 @@ const EventInfo = () => {
         <div className="flex justify-center">
         <button
   className="mt-6 bg-gradient-to-r from-cyan-400 to-blue-600 px-6 py-3 text-white font-semibold rounded-lg shadow-lg hover:scale-105 transition-transform"
-  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSeaZU2cy_ZZGOkNJQv8SYu-MY6x4XKCcnl7N6iMvQFPY8ZyrQ/viewform", "_blank")}
+  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSeaZU2cy_ZZGOkNJQv8SYu-MY6x4XKCcnl7N6iMvQFPY8ZyrQ/formResponse", "_blank")}
 >
   Register Now
 </button>
