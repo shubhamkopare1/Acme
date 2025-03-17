@@ -48,26 +48,19 @@ const Countdown = () => {
 <h1 className="text-[2rem] sm:text-[1.9rem] md:text-[2rem] lg:text-[2.2rem]  font-bold uppercase mb-4 bg-gradient-to-r from-blue-500 via-blue-600 to-cyan-400 bg-clip-text text-transparent mg-0 animate-pulse">
 Countdown
 </h1>
-<div className="flex flex-wrap justify-center gap-6  p-8 pt-0 pb-0">
-
-        {Object.entries(timeLeft).map(([unit, value]) => (
+<div className="flex flex-wrap justify-center gap-4 sm:gap-6 mt-4">
+        {Object.entries(timeLeft).map(([unit, value], index) => (
           <div
-            key={unit}
-            className="relative flex flex-col items-center transform transition duration-500 hover:scale-105"
+            key={index}
+            className="text-white bg-gradient-to-br from-gray-900 to-gray-800 border-[3px] border-purple-500/60 rounded-xl shadow-md shadow-purple-500/50 hover:shadow-lg hover:shadow-purple-500/70 transition-all duration-300 ease-in-out font-extrabold text-[clamp(1rem,3vw,1.5rem)] w-[clamp(80px,15vw,130px)] p-4 text-center"
           >
-            {/* Outer Glass Effect */}
-            <div className="relative w-28 h-28 sm:w-28 sm:h-28 flex flex-col items-center justify-center rounded-xl bg-[#101026] shadow-lg border border-blue-500/50 backdrop-blur-xl overflow-hidden">
-              {/* Flip Animation for Countdown */}
-              <div className="text-2xl sm:text-4xl text-white relative z-10 animate-flip">
-                {value}
-                
-              </div>
-              <span className="text-lg sm:text-xl uppercase mt-3 text-cyan-300 tracking-widest">
+            <span className="text-[clamp(1.5rem,4vw,2rem)] text-cyan-300">
+              {value}
+            </span>
+            <br />
+            <span className="text-xs uppercase tracking-widest text-gray-300">
               {unit}
             </span>
-            </div>
-            {/* Unit Labels */}
-          
           </div>
         ))}
       </div>
