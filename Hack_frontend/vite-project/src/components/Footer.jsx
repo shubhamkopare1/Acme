@@ -11,7 +11,7 @@ const Footer = () => {
         className="absolute top-[-50px] left-1/2 transform -translate-x-1/2 w-28 animate-bounce"
       />
 <h2 className="text-base sm:text-lg font-semibold text-cyan-400 uppercase">
-          TECHKRUTI 2025
+          TECH-AXION 2K25
         </h2>
       {/* Footer Content */}
       <div className="max-w-4xl mx-auto">
@@ -19,7 +19,7 @@ const Footer = () => {
         <p className="text-gray-400 mt-2">
           Information Technology Department
           <br/>
-          Tulsiramji Gaikwad college of Enginerring & Tech Mohgav
+          Tulsiramji Gaikwad Patil College of Engineering and Technology, Nagpur
         </p>
 
         
