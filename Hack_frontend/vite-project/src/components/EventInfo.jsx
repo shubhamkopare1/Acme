@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 const events = [
@@ -11,7 +11,7 @@ const events = [
     EntryFees: 120,
     IFees: 50,
     time: "10:00 AM - 4:00 PM",
-   
+    mode: "Offline",
     problemStatement: [
       "IT Department Portal",
       "Student Innovation ",
@@ -53,6 +53,7 @@ const events = [
     IFees: 50,
     time: "10:00 AM - 4:00 PM",
     img:"WhatsApp Image 2025-03-17 at 20.59.35_eb4241d4.jpg",
+    mode: "Offline",
     about: [
       {
         heading: "About the Event",
@@ -84,6 +85,7 @@ const events = [
     IFees: 50,
     time: "10:00 AM - 4:00 PM",
     img:"WhatsApp Image 2025-03-17 at 20.59.35_fbc35e73.jpg",
+    mode: "Online & Offline",
     problemStatement: [
       "Space Exploration: The Future",
       "The Power of Solar Energy",
@@ -122,6 +124,7 @@ const events = [
     IFees: 50,
     time: "10:00 AM - 4:00 PM",
     img:"egaming.PNG",
+    mode: "Offline",
     about: [
       {
         heading: "About the Event",
@@ -154,11 +157,12 @@ const events = [
     EntryFees: "Free",
     IFees: "Free",
     time: "10:00 AM - 4:00 PM",
+    mode: "Offline",
     problemStatement: [
       "Agriculture: Improve crop yield and sustainability.",
       "Food: Reduce food waste and ensure food security.",
       "Environment: Combat climate change and promote renewable energy.",
-      "Security: Enhance cybersecurity and data privacy.",
+      "Defence Security ",
       "Education: Revolutionize learning through technology.",
     ],
     about: [
@@ -192,6 +196,15 @@ const events = [
 const EventInfo = () => {
   const { id } = useParams();
   const event = events.find((event) => event.id === parseInt(id));
+  // console.log(event);
+  
+  useEffect(() => {
+    if (event) {
+      // console.log(event);
+      
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, []); // Add `event` as a dependency
 
   if (!event) {
     return <h2 className="text-center text-white">Event not found</h2>;
@@ -231,6 +244,10 @@ const EventInfo = () => {
               <span className="text-gray-400">{event.location}</span>
             </p>
             <p>
+              🖥️ <span className="font-semibold">Mode:</span>{" "}
+              <span className="text-purple-400">{event.mode}</span>
+            </p>
+            <p>
               <span className="font-semibold">Group Entry Fees (MAX 3-4 Members):</span>{" "}
               <span className="text-yellow-400 font-bold">₹ {event.EntryFees}</span>
             </p>
@@ -255,7 +272,18 @@ const EventInfo = () => {
           </div>
         )}
 </div>
-       
+       {/* Download PPT Button (Only for Poster Competition) */}
+       {event.id === 3 && ( // Check if the event is Poster Competition
+          <div className="flex justify-center mb-12">
+            <a
+              href="/poster competition tgpcet.pptx" // Replace with the actual path to the PPT file
+              download="Poster_Competition_Guidelines.pptx"
+              className="bg-gradient-to-r from-cyan-400 to-blue-600 px-8 py-3 text-white font-semibold rounded-lg shadow-lg hover:scale-105 transition-transform hover:shadow-cyan-500/50 "
+            >
+              Use Poster Format
+            </a>
+          </div>
+        )}
 
         {/* Register Button */}
         <div className="flex justify-center mb-12">

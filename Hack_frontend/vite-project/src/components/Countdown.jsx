@@ -2,9 +2,11 @@ import { useState, useEffect } from "react";
 import React from "react";
 
 const Countdown = () => {
-  const targetDate = new Date("April 5, 2025 00:00:00").getTime();
+  // Set the target date to April 5, 2025, 10:00 AM
+  const targetDate = new Date("April 5, 2025 10:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState(getTimeRemaining());
 
+  // Function to calculate time remaining
   function getTimeRemaining() {
     const now = new Date().getTime();
     const difference = targetDate - now;
@@ -16,7 +18,6 @@ const Countdown = () => {
       seconds: Math.floor((difference / 1000) % 60),
     };
   }
-
   useEffect(() => {
     const interval = setInterval(() => {
       setTimeLeft(getTimeRemaining());

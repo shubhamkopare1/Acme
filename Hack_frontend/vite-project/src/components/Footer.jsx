@@ -22,8 +22,6 @@ const Footer = () => {
           Tulsiramji Gaikwad Patil College of Engineering and Technology, Nagpur
         </p>
 
-        
-    
 
         {/* Copyright */}
         <p className="text-gray-500 text-sm mt-6">© Acme 2025 . All Rights Reserved.</p>
