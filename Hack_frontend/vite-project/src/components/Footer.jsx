@@ -26,7 +26,7 @@ const Footer = () => {
         {/* Copyright */}
         <p className="text-gray-500 text-sm mt-6">© Acme 2025 . All Rights Reserved.</p>
         <p class="text-gray-500 text-xs">Developed by <span class="text-cyan-400 font-semibold">Shubham Kopare 6th sem</span> </p>
-        <p className="text-gray-500 text-sm ">mobile :<span class="text-cyan-400 font-semibold">8485029672</span> </p>
+        <p className="text-gray-500 text-sm ">contact :<span class="text-cyan-400 font-semibold">8485029672</span> </p>
       </div>
     </footer>
   );

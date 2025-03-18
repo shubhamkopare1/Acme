@@ -303,7 +303,7 @@ const EventInfo = () => {
         </div>
 
         {/* About the Event Section */}
-        <div className="mb-12">
+        <div className="mb-12 "style={{display:"flex",justifyContent:"center", flexDirection:"column", alignContent:"center"}}>
           <h2 className="text-3xl font-bold text-center text-blue-400 mb-6">
             About the Event
           </h2>
