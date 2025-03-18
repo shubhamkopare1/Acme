@@ -12,7 +12,7 @@ const events = [
     IFees: 50,
     time: "10:00 AM - 4:00 PM",
     mode: "Offline",
-    img:"WEB CARFT[1].png",
+    img: "WEB CARFT[1].png",
     problemStatement: [
       "IT Department Portal",
       "Student Innovation ",
@@ -53,7 +53,7 @@ const events = [
     EntryFees: 120,
     IFees: 50,
     time: "10:00 AM - 4:00 PM",
-    img:"WhatsApp Image 2025-03-17 at 20.59.35_eb4241d4.jpg",
+    img: "WhatsApp Image 2025-03-17 at 20.59.35_eb4241d4.jpg",
     mode: "Offline",
     about: [
       {
@@ -85,7 +85,7 @@ const events = [
     EntryFees: 120,
     IFees: 50,
     time: "10:00 AM - 4:00 PM",
-    img:"WhatsApp Image 2025-03-17 at 20.59.35_fbc35e73.jpg",
+    img: "WhatsApp Image 2025-03-17 at 20.59.35_fbc35e73.jpg",
     mode: "Online & Offline",
     problemStatement: [
       "Space Exploration: The Future",
@@ -124,7 +124,7 @@ const events = [
     EntryFees: 120,
     IFees: 50,
     time: "10:00 AM - 4:00 PM",
-    img:"egaming.PNG",
+    img: "egaming.PNG",
     mode: "Offline",
     about: [
       {
@@ -158,7 +158,7 @@ const events = [
     EntryFees: "Free",
     IFees: "Free",
     time: "10:00 AM - 4:00 PM",
-    img:"IMG_2045[1].png",
+    img: "IMG_2045[1].png",
     mode: "Offline",
     problemStatement: [
       "Agriculture: Improve crop yield and sustainability.",
@@ -185,25 +185,23 @@ const events = [
       "Expert Mentorship",
       "Networking Opportunities",
       "Prizes and Recognition",
-      
     ],
     contacts: [
       { name: "Arya Deshmukh", phone: "+91 9890205953" },
       { name: "Prajwal Tekale", phone: "+91 8421270924" },
     ],
-  }
+  },
 ];
-
 
 const EventInfo = () => {
   const { id } = useParams();
   const event = events.find((event) => event.id === parseInt(id));
   // console.log(event);
-  
+
   useEffect(() => {
     if (event) {
       // console.log(event);
-      
+
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, []); // Add `event` as a dependency
@@ -220,17 +218,17 @@ const EventInfo = () => {
           <h1 className="font-bold text-4xl sm:text-5xl mb-3 md:text-6xl bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">
             {event.title}
           </h1>
-            {/* Event Image */}
-            
-            {event.img && (
-  <div className="flex justify-center mb-12">
-    <img
-      src={`/${event.img}`} // Assuming images are stored in the `public` folder
-      alt={event.title}
-      className="rounded-lg shadow-lg w-full max-w-sm "
-    />
-  </div>
-)}
+          {/* Event Image */}
+
+          {event.img && (
+            <div className="flex justify-center mb-12">
+              <img
+                src={`/${event.img}`} // Assuming images are stored in the `public` folder
+                alt={event.title}
+                className="rounded-lg shadow-lg w-full max-w-sm "
+              />
+            </div>
+          )}
           <p className="mt-4 text-lg text-gray-300">{event.subtitle}</p>
           <div className="mt-6 space-y-2 text-gray-300">
             <p>
@@ -250,8 +248,12 @@ const EventInfo = () => {
               <span className="text-purple-400">{event.mode}</span>
             </p>
             <p>
-              <span className="font-semibold">Group Entry Fees (MAX 3-4 Members):</span>{" "}
-              <span className="text-yellow-400 font-bold">₹ {event.EntryFees}</span>
+              <span className="font-semibold">
+                Group Entry Fees (MAX 3-4 Members):
+              </span>{" "}
+              <span className="text-yellow-400 font-bold">
+                ₹ {event.EntryFees}
+              </span>
             </p>
             <p>
               <span className="font-semibold">Solo Entry Fees:</span>{" "}
@@ -259,23 +261,29 @@ const EventInfo = () => {
             </p>
           </div>
         </div>
-<div style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
- {/* Problem Statements Section */}
- {event.problemStatement && event.problemStatement.length > 0 && (
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold text-center text-cyan-400 mb-4">
-              Problem Statements
-            </h2>
-            <ul className="list-disc list-inside space-y-2 text-gray-300">
-              {event.problemStatement.map((statement, index) => (
-                <li key={index}>{statement}</li>
-              ))}
-            </ul>
-          </div>
-        )}
-</div>
-       {/* Download PPT Button (Only for Poster Competition) */}
-       {event.id === 3 && ( // Check if the event is Poster Competition
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          {/* Problem Statements Section */}
+          {event.problemStatement && event.problemStatement.length > 0 && (
+            <div className="mb-12">
+              <h2 className="text-2xl font-bold text-center text-cyan-400 mb-4">
+                Problem Statements
+              </h2>
+              <ul className="list-disc list-inside space-y-2 text-gray-300">
+                {event.problemStatement.map((statement, index) => (
+                  <li key={index}>{statement}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+        {/* Download PPT Button (Only for Poster Competition) */}
+        {event.id === 3 && ( // Check if the event is Poster Competition
           <div className="flex justify-center mb-12">
             <a
               href="/poster competition tgpcet.pptx" // Replace with the actual path to the PPT file
@@ -303,7 +311,15 @@ const EventInfo = () => {
         </div>
 
         {/* About the Event Section */}
-        <div className="mb-12 "style={{display:"flex",justifyContent:"center", flexDirection:"column", alignContent:"center"}}>
+        <div
+          className="mb-12 "
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            alignContent: "center",
+          }}
+        >
           <h2 className="text-3xl font-bold text-center text-blue-400 mb-6">
             About the Event
           </h2>

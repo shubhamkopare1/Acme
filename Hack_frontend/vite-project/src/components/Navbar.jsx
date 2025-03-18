@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom"; // If using React Router
 import { motion } from "framer-motion";
@@ -19,12 +18,16 @@ const Navbar = () => {
   ];
 
   return (
- <nav   className="relative text-white border-gray-300 p-2 rounded-lg m-8 mb-2">
+    <nav className="relative text-white border-gray-300 p-2 rounded-lg m-8 mb-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           {/* <h1 className="text-2xl font-bold text-green-400">TECH-AXION</h1> */}
-          <img src="/acme-removebg-preview.png" alt="" style={{width:"6rem"}}/>
+          <img
+            src="/acme-removebg-preview.png"
+            alt=""
+            style={{ width: "6rem" }}
+          />
 
           {/* Desktop Nav */}
           <div className="hidden md:flex space-x-6">
@@ -82,4 +85,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;
