@@ -7,7 +7,7 @@ const events = [
     title: "WEB CRAFT (UI/UX)",
     description:
       "Showcase your creativity and design intuitive user experiences in this ultimate UI/UX competition.",
-    img: "esport.jpg",
+    img: "WEB CARFT[2].png",
     entryFee: 120,
     date: "5 April 2025",
     time:"10:00 AM - 4:00 PM",
@@ -18,7 +18,7 @@ const events = [
     title: "INNOWARS",
     description:
       "Present your innovative tech projects and showcase your problem-solving skills",
-    img: "Innowars2.jpg",
+    img: "INNOWARS[2].png",
     entryFee: 120,
     date: "5 April 2025",
     time:"10:00 AM - 4:00 PM",
@@ -29,7 +29,7 @@ const events = [
     title: "CREATIVE CANVA",
     description:
       "Design creative and impactful posters that visually communicate powerful ideas.",
-    img: "canva2.jpg",
+    img: "CREATIVE CANVA[2].png",
     entryFee: 120,
     date: "5 April 2025",
     time:"10:00 AM - 4:00 PM",
@@ -51,7 +51,7 @@ const events = [
     title: "IDEATHON",
     description:
       "Showcase your startup ideas to investors and industry leaders.",
-    img: "Projects.jpg",
+    img: "IMG_2045[2].png",
     entryFee: "Free",
     date: "5 April 2025",
     time:"10:00 AM - 4:00 PM",

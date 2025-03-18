@@ -12,6 +12,7 @@ const events = [
     IFees: 50,
     time: "10:00 AM - 4:00 PM",
     mode: "Offline",
+    img:"WEB CARFT[1].png",
     problemStatement: [
       "IT Department Portal",
       "Student Innovation ",
@@ -144,7 +145,7 @@ const events = [
       "Compete with the Best",
     ],
     contacts: [
-      { name: "Anshul Ramteke", phone: "+91 8605383520" },
+      { name: "Anshul Ramteke", phone: "+91 8605388520" },
       { name: "Pranav Ladole", phone: "+91 9325506283" },
     ],
   },
@@ -157,6 +158,7 @@ const events = [
     EntryFees: "Free",
     IFees: "Free",
     time: "10:00 AM - 4:00 PM",
+    img:"IMG_2045[1].png",
     mode: "Offline",
     problemStatement: [
       "Agriculture: Improve crop yield and sustainability.",
