@@ -50,7 +50,7 @@ const events = [
     id: 5,
     title: "IDEATHON",
     description:
-      "Showcase your startup ideas to investors and industry leaders.",
+      "Solve Real-World Problems with Innovative Solutions",
     img: "IMG_2045[2].png",
     entryFee: "Free",
     date: "5 April 2025",
