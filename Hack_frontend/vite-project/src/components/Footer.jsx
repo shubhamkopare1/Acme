@@ -38,11 +38,11 @@ const Footer = () => {
         <p class="text-gray-500 text-xs">
           Developed by{" "}
           <span class="text-cyan-400 font-semibold">
-           Mr. Shubham Kopare
+           Shubham Kopare & Chhagan Rakhade
           </span>{" "}
-          <span class="text-cyan-400 font-semibold">
+          {/* <span class="text-cyan-400 font-semibold">
             Btech-6th Sem
-          </span>{" "}
+          </span>{" "} */}
         </p>
         <p className="text-gray-500 text-sm ">
           contact :<span class="text-cyan-400 font-semibold">8485029672</span>{" "}
