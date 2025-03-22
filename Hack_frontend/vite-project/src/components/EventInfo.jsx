@@ -196,15 +196,14 @@ const events = [
 const EventInfo = () => {
   const { id } = useParams();
   const event = events.find((event) => event.id === parseInt(id));
-  // console.log(event);
+  console.log(event);
 
-  useEffect(() => {
-    if (event) {
-      // console.log(event);
-
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-  }, []); // Add `event` as a dependency
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     window.scrollTo({ top: 0, behavior: "smooth" });
+  //   }, 50); // Small delay to ensure rendering completes
+  // }, [event]); // Runs when `event` is updated
+  //  // Add `event` as a dependency
 
   if (!event) {
     return <h2 className="text-center text-white">Event not found</h2>;
@@ -291,6 +290,17 @@ const EventInfo = () => {
               className="bg-gradient-to-r from-cyan-400 to-blue-600 px-8 py-3 text-white font-semibold rounded-lg shadow-lg hover:scale-105 transition-transform hover:shadow-cyan-500/50 "
             >
               Use Poster Format
+            </a>
+          </div>
+        )}
+        {event.id === 5 && ( // Check if the event is Poster Competition
+          <div className="flex justify-center mb-12">
+            <a
+              href="/COMPPT.pptx" // Replace with the actual path to the PPT file
+              download="Poster_Competition_Guidelines.pptx"
+              className="bg-gradient-to-r from-cyan-400 to-blue-600 px-8 py-3 text-white font-semibold rounded-lg shadow-lg hover:scale-105 transition-transform hover:shadow-cyan-500/50 "
+            >
+              Use PPT Format
             </a>
           </div>
         )}
