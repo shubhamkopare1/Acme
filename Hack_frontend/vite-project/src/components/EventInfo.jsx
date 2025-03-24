@@ -159,7 +159,7 @@ const events = [
     IFees: "Free",
     time: "10:00 AM - 4:00 PM",
     img: "IMG_2045[1].png",
-    mode: "Offline",
+    mode: "Offline / Online",
     problemStatement: [
       "Agriculture: Improve crop yield and sustainability.",
       "Food: Reduce food waste and ensure food security.",
@@ -198,12 +198,9 @@ const EventInfo = () => {
   const event = events.find((event) => event.id === parseInt(id));
   console.log(event);
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     window.scrollTo({ top: 0, behavior: "smooth" });
-  //   }, 50); // Small delay to ensure rendering completes
-  // }, [event]); // Runs when `event` is updated
-  //  // Add `event` as a dependency
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [event]);
 
   if (!event) {
     return <h2 className="text-center text-white">Event not found</h2>;

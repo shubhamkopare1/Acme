@@ -11,12 +11,13 @@ import Event from "./pages/Event";
 // import Sponsor from "./pages/Sponsor";
 // import Admin from "./pages/Admin";
 import Footer from "./components/Footer";
-
+import ScrollToTop from "./components/ScrollToTop";
 function App() {
   return (
     <>
 
 <CodeBackground id="particles" />
+{/* <ScrollToTop/> */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} /> 
