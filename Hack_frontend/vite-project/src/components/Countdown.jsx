@@ -10,7 +10,17 @@ const Countdown = () => {
   function getTimeRemaining() {
     const now = new Date().getTime();
     const difference = targetDate - now;
+  const difference = targetDate - now;
 
+  // If time is over, return all zeros
+  if (difference <= 0) {
+    return {
+      days: "00",
+      hours: "00",
+      minutes: "00",
+      seconds: "00",
+    };
+  }
     return {
       days: Math.floor(difference / (1000 * 60 * 60 * 24)),
       hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
