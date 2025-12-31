@@ -10,7 +10,6 @@ const Countdown = () => {
   function getTimeRemaining() {
     const now = new Date().getTime();
     const difference = targetDate - now;
-  const difference = targetDate - now;
 
   // If time is over, return all zeros
   if (difference <= 0) {
